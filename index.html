@@ -108,7 +108,7 @@
             var mtlLoader = new THREE.MTLLoader();
             mtlLoader.setBaseUrl('assets/');
             mtlLoader.setPath('assets/');
-            mtlLoader.load('YSBFull.2.mtl', function (materials) {
+            mtlLoader.load('YSBFull3.mtl', function (materials) {
 
                 materials.preload();
 
@@ -118,7 +118,7 @@
                 var objLoader = new THREE.OBJLoader();
                 objLoader.setMaterials(materials);
                 objLoader.setPath('assets/');
-                objLoader.load('YSBFull.2.obj', function (object) {
+                objLoader.load('YSBFull3.obj', function (object) {
 
                     scene.add(object);
 
